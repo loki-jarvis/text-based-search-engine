@@ -53,6 +53,4 @@ The following is the list of algorithms/steps we would be using in this project.
 # How to Run this Project
 https://text-based-search-engine.herokuapp.com/
 
-# Demo
-
 # Limitations
