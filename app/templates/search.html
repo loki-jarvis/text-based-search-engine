@@ -1,0 +1,87 @@
+<head>
+
+	<!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,400italic,700,700italic,100italic'
+		rel='stylesheet' type='text/css'>
+	<link
+		href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic|Open+Sans+Condensed:300'
+		rel='stylesheet' type='text/css'>
+
+	<!-- Website Title & Description -->
+	<title>Word Based Search Engine</title>
+	<meta name="description" content="A Scalable search engine for huge text collections">
+	<link rel="icon" href="#0" type="image/gif" sizes="32x32">
+
+	<!-- Mobile viewport optimized -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<!-- Internet Explorer Compatibility string -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css"
+		href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="{{ url_for('static',filename='styles/styles.css') }}">
+
+	<!-- JS -->
+	<script src="https://code.jquery.com/jquery-3.0.0.min.js"
+		integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+	<script src="{{url_for('static',filename='scripts/scripts.js')}}"></script>
+
+
+</head>
+
+<body>
+
+	<!-- <header>
+		<h1>Text Based Search Engine</h1>
+	</header> -->
+
+	<mat-grid-tile class="div-1 d-none d-sm-block" >
+		<div class="container ">
+		   <h1 class="system"> <b > Grep+ A Word Based Search Engine </b> </h1>
+		   <hr class="line">
+		   <span class="dot"></span>
+  
+		</div>
+	</mat-grid-tile>
+	
+	<div class="row" style="margin-left: 25%;">
+		<div class="card-body" style="padding-top: 4%; padding-bottom: 2%;">
+			<div class="row" style="margin-left: 4%;">
+					<div class="col-sm-2">
+						<label for="search"><i class="fa fa-search" aria-hidden="true"></i></label>
+					</div>
+					<div class="col-sm-6">
+						<input id="search" name="search" type="search" list="searchHelper" placeholder="Type a word you want to Search..." />
+						<datalist id="searchHelper"></datalist>
+					</div>
+					<div class="col-sm-4" style="margin-left: 8%;">
+						<button class="btn btn-primary" type="submit" id="searchButton"> Search </button>
+						<button class="btn btn-primary" id="clearButton">Clear</button>
+					</div>
+				
+			</div>
+		</div>
+	</div>
+<!-- <div class="row" style="margin-right: 20px; margin-left: 20%; margin-top: 5%;">
+	<div class="card">
+			<form>
+				<div class="row">
+					<div class="form-group">
+							<label for="searchInput">Search</label>
+							<input type="text" class="form-control" id="searchInput" placeholder="Enter search term">
+					</div>
+					<button type="submit" class="btn btn-primary">Search</button>
+					<button type="reset" class="btn btn-secondary">Clear</button>
+				
+				</div>
+			</form>
+	</div>
+</div> -->
+
+	<div id="searchUpdate">
+	</div>
+	<footer>
+	</footer>
