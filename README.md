@@ -47,10 +47,5 @@ The following is the list of algorithms/steps we would be using in this project.
 6.  Heapify
 7.  Tries
 
-# Tech Stack Used
-
-
-# How to Run this Project
+# Running Instance
 https://text-based-search-engine.herokuapp.com/
-
-# Limitations
